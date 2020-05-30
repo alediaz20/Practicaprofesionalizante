@@ -9,7 +9,7 @@
 
 	<link   rel="stylesheet" href="css/propio.css" ></script>
 </head>
-<body class="Body1">
+<body >
 
 
 	<div id="app" class="container">
@@ -24,8 +24,23 @@
 				<br>
 				<br>
 				<div>
-				<button class="btn-ghost round green" @click="altaarticulo=true">Ingresar</button>
-				<button class="btn-ghost round blue" @click="buscararticulo=true">Buscar</button>
+
+				<a @click="altaarticulo=true">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					Ingresar
+				</a>
+				<a @click="buscararticulo=true">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>	
+					Buscar
+				</a>
+				<!--<button class="btn-ghost round green" @click="altaarticulo=true">Ingresar</button> 
+				<button class="btn-ghost round blue" @click="buscararticulo=true">Buscar</button>-->
 				</div>
 				<div class="control" v-if="buscararticulo">
 				        <input type="text"  placeholder="Buscar articulos..." v-model="busqueda" >
