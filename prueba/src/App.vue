@@ -24,7 +24,7 @@ export default {
   name: 'app',
   data () {
     return {
-      msg: 'PRIMERA APP EN VUE'
+      msg: 'Mi App en Vue'
     }
   }
 }
