@@ -17,10 +17,11 @@
 			<div class="col-lg-5 col-md-8 col-sm-7 col-xs-6">
 				<div class="form-group">
 					<div class="titulo"> <h1>{{titulo}}</h1> </div>
-					<div v-if="mostrarMensaje" class="mensaje"> {{mensaje}}
+					<div v-if="mostrarMensaje" class="mensaje">
+						{{mensaje}}
 						<button class="cierre" @click="mostrarMensaje=false">x</button>
 					</div>
-				</div>
+					</div>
 				<br>
 				<br>
 				<div>
@@ -36,10 +37,10 @@
 					<span></span>
 					<span></span>
 					<span></span>
-					<span></span>	
+					<span></span>
 					Buscar
 				</a>
-				<!--<button class="btn-ghost round green" @click="altaarticulo=true">Ingresar</button> 
+				<!--<button class="btn-ghost round green" @click="altaarticulo=true">Ingresar</button>
 				<button class="btn-ghost round blue" @click="buscararticulo=true">Buscar</button>-->
 				</div>
 				<div class="control" v-if="buscararticulo">
